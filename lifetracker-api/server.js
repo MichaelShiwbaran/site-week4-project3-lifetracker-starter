@@ -1,8 +1,8 @@
 "use strict"
 
 const app = require("./app")
-const PORT = 3001
+const PORT = "https://lifetracker-hub-website.onrender.com"
 
 app.listen(PORT, function () {
-  console.log(`🚀 Server running on http://localhost:${PORT}`)
+  console.log(`🚀 Server running on ${PORT}`)
 })
