@@ -12,7 +12,7 @@ const LogInUser = ({setLogin , LoginInfo , setLoginInfo, setUserID }) => {
     const password = LoginInfo.password
     const PostCallToLogInUser = async () => {
         try {
-            const response = await axios.post("http://localhost:3001/auth/login", {'email':email,  'password': password});
+            const response = await axios.post("https://lifetracker-hub-website.onrender.com/auth/login", {'email':email,  'password': password});
             if (response.status === 200) {
                 const token = response.data.token
                 Cookies.set("token", token)

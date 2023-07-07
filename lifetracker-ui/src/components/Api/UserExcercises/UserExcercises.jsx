@@ -5,7 +5,7 @@ const UserExcercises = ({UserID}) => {
     const [ExerciseLogs, setExcerciseLogs] = useState([])
     const GetUserExcercises = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/exercise/useexercisedata/${UserID}`);
+            const response = await axios.get(`https://lifetracker-hub-website.onrender.com/exercise/useexercisedata/${UserID}`);
             console.log(response.data)
             setExcerciseLogs(response.data)
         } catch (error) {
@@ -16,7 +16,7 @@ const UserExcercises = ({UserID}) => {
     const PostUserExcercises = async (ExcerciseLog) => {
         try {
             console.log('ExcerciseLog' ,ExcerciseLog, 'UserID' , UserID)
-            const response = await axios.post("http://localhost:3001/exercise/addexercise", { 'name' :ExcerciseLog.name, 'duration': ExcerciseLog.duration, 'intensity': ExcerciseLog.intensity, 'category': ExcerciseLog.category, 'UserID': UserID });
+            const response = await axios.post("https://lifetracker-hub-website.onrender.com/exercise/addexercise", { 'name' :ExcerciseLog.name, 'duration': ExcerciseLog.duration, 'intensity': ExcerciseLog.intensity, 'category': ExcerciseLog.category, 'UserID': UserID });
             console.log(response.data)
             // SetLogInUserInfo(true)
         } catch (error) {

@@ -5,7 +5,7 @@ const UserSleep = ({UserID}) => {
     const [SleepLogs, setSleepLogs] = useState([])
     const GetSleepingData = async () => {
         try {
-            const response = await axios.get(`http://localhost:3001/sleep/sleeplogs/${UserID}`);
+            const response = await axios.get(`https://lifetracker-hub-website.onrender.com/sleep/sleeplogs/${UserID}`);
             console.log(response.data)
             setSleepLogs(response.data)
         } catch (error) {
@@ -15,7 +15,7 @@ const UserSleep = ({UserID}) => {
     const PostSleepingData = async (SleepingLog) => {
         try {
             console.log("Sleeping Log is:",SleepingLog ,'UserID is:', UserID)
-            const response = await axios.post("http://localhost:3001/sleep/sleepingData", { 'start_time' :SleepingLog.starttime, 'end_time': SleepingLog.endtime, 'UserID': UserID } );
+            const response = await axios.post("https://lifetracker-hub-website.onrender.com/sleep/sleepingData", { 'start_time' :SleepingLog.starttime, 'end_time': SleepingLog.endtime, 'UserID': UserID } );
             console.log(response.data)
             // SetLogInUserInfo(true)
         } catch (error) {
