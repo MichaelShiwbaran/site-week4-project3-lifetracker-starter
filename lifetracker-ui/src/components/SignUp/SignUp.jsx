@@ -34,7 +34,7 @@ const SignUp = (props) => {
     <div className='form-div'>
       <img src="https://icones.pro/wp-content/uploads/2021/02/icone-utilisateur.png" alt="" />
       <h1>Create Account</h1>
-
+      <h4>And get started on your journey</h4>
       <form className='signup-form' onSubmit= {(event) => signUpFormSubmission(event, PostSignUpInfo , signUpInfo) }>
       
       <span className='inline'>
@@ -71,7 +71,7 @@ const SignUp = (props) => {
       <button type="submit">Create Account</button>
       </form>
       <p className='prompt'>Already have an account?    
-      <Link to={"/login"}>Log In</Link>
+      <Link to={"/login"}> Log In</Link>
       </p>
     </div>
     </div>

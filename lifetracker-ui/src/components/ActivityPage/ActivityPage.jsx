@@ -6,11 +6,13 @@ const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
 
   let totalExerciseMinutes = 0
   let averageDailyCalories = 0
-  let avgHoursSleep=0
+  let avgHoursSleep = 0
 
   NutritionLogs.map((calories) => {
     averageDailyCalories += calories.calories
   })
+  averageDailyCalories = averageDailyCalories / NutritionLogs.length
+  averageDailyCalories.toFixed(2)
  
   ExerciseLogs.map((exercise) => {
     totalExerciseMinutes += exercise.duration
@@ -54,26 +56,29 @@ const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
           <h3>Activity Log</h3>
         </div>
         <div className='ex-sleep-nutri'>
-          <Link to={"/exercise/create"}><button className='ex-btn'>Add Exercise</button></Link>
-          <Link to={"/nutrition/create"}><button className='nutri-btn'>Record Nutrition</button></Link>
-          <Link to={"/sleep/create"}><button className='sleep-btn'>Log Sleep</button></Link>
+          <Link to={"/exercise/create"}><button className='ex-btn'>Add More Exercises</button></Link>
+          <Link to={"/nutrition/create"}><button className='nutri-btn'>Record More Nutrition</button></Link>
+          <Link to={"/sleep/create"}><button className='sleep-btn'>Log More Sleep</button></Link>
         </div>
       </div>
       
       <div className="total-data">
      
       <div className='ex-minutes data-card'>
-        <p>Total Exercise Minutes</p>
+        <p>Total Exercise Minutes:</p>
         <p className='data-num'>{totalExerciseMinutes}</p>
       </div>
 
       <div className='daily-cal data-card'>
-        <p> Average Daily Calories</p>
-        <p className='data-num'>{averageDailyCalories}</p>
+        <p> Average Daily Calories:</p>
+        { averageDailyCalories > 0?
+        <p className='data-num'>{averageDailyCalories}</p>:
+        <p className='data-num'>0</p>
+        }
       </div>
 
       <div className='hrs-sleep data-card'>
-        <p> Average Hours of Sleep</p>
+        <p> Average Hours of Sleep:</p>
         <p className='data-num' >{avgHoursSleep}</p>
       </div>
 

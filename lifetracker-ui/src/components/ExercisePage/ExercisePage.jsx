@@ -18,7 +18,7 @@ const ExercisePage = ( {ExerciseLogs, setExcerciseLogs, Login, GetUserExcercises
   </div>
 
   <div className='body-ex'>
-  <Link  to={"/exercise/create"}><button className='add-ex'>+</button> </Link>
+  <Link  to={"/exercise/create"} className='link'><button className='add-ex'>Add more...</button> </Link>
   <br />
 
   {ExerciseLogs.map((ExerciseLogs, id) => (<ExercisePageCard key={id} ExerciseLogs={ExerciseLogs}/>))}

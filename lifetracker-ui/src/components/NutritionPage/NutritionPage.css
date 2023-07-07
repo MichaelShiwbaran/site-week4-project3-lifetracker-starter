@@ -1,7 +1,7 @@
 .header-wrap-nutri{
   width: 100%; 
   height: 20vh;
-  background-color:#F24C3D;
+  background-color:#871207;
 }
 
 .header{
@@ -11,29 +11,29 @@ padding-top: 90px;
 font-family: "Avenir", sans-serif;
 }
 
-.body-nutri{
-  margin-left: 15%; 
-  margin-right: 15%;
-  align-items: center;
-  padding: 10px; 
-  color: #2D4356; 
+.body-nutri {
+  margin: 0 auto;
+  padding: 20px;
+  color: #2D4356;
+  text-align: center;
 }
 
-.add-nutri{ 
-  margin-top: 10px; 
-  margin-left: 15%; 
-  border-radius: 5px;
-  border: none; 
-  background-color: #EEEE;
-  padding: 10px 40px; 
-  font-size: 20px;
-  font-weight: bold;
-  width: 70%; 
-  color: #2D4356; 
-
+.link {
+  text-decoration: none;
 }
 
-.add-nutri:hover{
-  border: solid 2px #2D4356;
-  background-color: transparent;
+.add-nutri {
+  display: block;
+  margin: 20px auto;
+  border-radius: 4px;
+  border: none;
+  background-color: #55a6b8;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.add-nutri:hover {
+  background-color: #55a6b8;
 }

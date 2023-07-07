@@ -1,7 +1,7 @@
 .header-wrap-sleep{
   width: 100%; 
   height: 20vh;
-  background-color:#9681EB; 
+  background-color:#13005d; 
 }
 
 .header{
@@ -40,7 +40,7 @@ font-family: "Avenir", sans-serif;
 .add-sleep button{
     border: solid #9681EB 2px; 
     border-radius: 5px;
-    background-color: #9681EB;
+    background-color: #13005d;
     margin-top: 6px;
     margin-right: 20px; 
     padding-top: 10px; 

@@ -48,15 +48,23 @@
 }
 
 .ex-minutes{
-    background-color: #A0D8B3;
+    background-color: #004f1a;
 }
 
 .hrs-sleep{
-    background-color: #9681EB;
+    background-color: #13005d;
 }
 
 .daily-cal{
-    background-color: #F24C3D; 
+    background-color: #871207; 
+}
+
+.ex-sleep-nutri {
+    margin: 20px; 
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 4px;
 }
 
 .ex-sleep-nutri button{
@@ -74,19 +82,19 @@
 
 .ex-sleep-nutri .ex-btn{
     border-color: #A0D8B3;
-    color: #A0D8B3;
+    color:#004f1a;
     font-weight: bold;
 }
 
 .ex-sleep-nutri .nutri-btn{
     border-color: #F24C3D;
-    color: #F24C3D;
+    color: #871207;
     font-weight: bold;
 }
 
 .ex-sleep-nutri .sleep-btn{
     border-color: #9681EB;
-    color: #9681EB;
+    color: #13005d;
     font-weight: bold;
 }
 

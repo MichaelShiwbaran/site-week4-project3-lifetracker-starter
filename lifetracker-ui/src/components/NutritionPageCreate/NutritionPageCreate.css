@@ -1,7 +1,7 @@
 .header-wrap{
     width: 100%; 
     height: 20vh;
-    background-color:#F24C3D;
+    background-color:#871207;
 }
 
 .header{
@@ -23,7 +23,7 @@
 
 .cat-form h2{
     font-size: 32px;
-    color: #F24C3D;
+    color: #871207;;
     margin-bottom: 30px;
     text-align: center;
     margin-left: -10%;
@@ -61,7 +61,7 @@
 .add-nutrition button{
     border: solid #F24C3D 2px; 
     border-radius: 5px;
-    background-color: #F24C3D;
+    background-color: #871207;;
     margin-top: 6px;
     margin-right: 20px; 
     padding-top: 10px; 

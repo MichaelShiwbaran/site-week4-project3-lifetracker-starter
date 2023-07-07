@@ -9,6 +9,7 @@
 .links {
   list-style: none;
   color: white;
+  justify-content: left;
 }
 
 .navbar a:hover {
@@ -17,7 +18,7 @@
 
 .links li{
   display: inline-block;
-  padding: 0px 30px; 
+  padding: 0px 20px; 
 
 }
 
@@ -25,7 +26,7 @@
   display: flex; 
   justify-content: center;
   align-items: center;
-  padding: 30px 10%; 
+  padding: 30px 1%; 
   margin-top: none; 
   /* margin-bottom:1%;  */
   background-color: white;
@@ -48,11 +49,8 @@ ul li{
   margin-bottom:2%;
 }
 
-.login-state{
+.login-state {
   display: inline-block;
-}
-
-.login-state button{
   background-color: white; 
   font-size: 23px;
   font-family: "Avenir", sans-serif;
@@ -66,40 +64,3 @@ ul li{
   background-color: #3AA6B9;
   color: white; 
 } 
-
-/* li .login-state{
-  border: 1px; 
-} */
-
-
-/* 
-.navbar .content {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.navbar .content .logo {
-  width: 100px;
-  margin-right: 50px;
-}
-
-
-.navbar .content .links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  list-style-type: none;
-  text-decoration: none;
-  margin-left: auto;
-  flex: 1;
-  max-width: 650px;
-}
-
-.navbar .content .logo {
-  width: 100px;
-  margin-right: 50px;
-} */

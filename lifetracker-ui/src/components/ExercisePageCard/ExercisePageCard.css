@@ -1,49 +1,46 @@
-.ex-card{
-    background-color: #EEEEEE;
-    width: 300px; 
-    height: 240px;
-    display: inline-block;
-    margin: 2%;
-    border-radius: 10px;
-    font-family: "Avenir", sans-serif;
-    padding: 15px;
-  }
-  
-  .split{
-    display: flex; 
-    padding: 2px 10px; 
-  
-  } 
-  
-  .ex-duration-div{
-    margin: none; 
-    padding: none; 
-    left: 0; 
-    width: 50%; 
-  }
-  
-  .ex-intensity-div{
-    margin: none; 
-    padding: none; 
-    right: 0; 
-    width: 50%;
-    text-align: right;  
-  }
-  
-  .ex-activity{
-    font-weight: bold;
-    font-size: 30px; 
-    text-align: center; 
-    margin: 0px 0px; 
-  }
-  
-  .ex-data{
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .ex-date{
-    margin: 60px 0px 2px; 
-  }
-  
-  
+.ex-card {
+  background-color: #EEEEEE;
+  width: 300px;
+  height: 240px;
+  display: inline-block;
+  margin: 2%;
+  border-radius: 10px;
+  font-family: "Avenir", sans-serif;
+  padding: 15px;
+}
+
+.split {
+  display: flex;
+  padding: 2px 10px;
+}
+
+.ex-duration-div {
+  margin: none;
+  padding: none;
+  left: 0;
+  width: 50%;
+}
+
+.ex-intensity-div {
+  margin: none;
+  padding: none;
+  right: 0;
+  width: 50%;
+  text-align: right;
+}
+
+.ex-activity {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+.ex-data {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ex-date {
+  margin: 60px 0px 2px;
+}

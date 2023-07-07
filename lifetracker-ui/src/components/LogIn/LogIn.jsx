@@ -16,7 +16,7 @@ const LogIn = ({Login, setLogin , setUserID }) => {
 
   <div className='login-div'>
       <h1>Welcome Back!</h1>
-      <p>Insert your login details below</p>
+      <p>Insert your login details below and continue your journey</p>
       <form className='login-form' onSubmit={ (event) => LogInFormSubmission(event, PostCallToLogInUser , LoginInfo )}> 
       {/* <label> Email </label> */}
       <input type="email" name="email" id="email" placeholder='Email' required onChange={ updateUserEmail}/>

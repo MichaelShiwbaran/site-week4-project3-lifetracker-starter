@@ -17,7 +17,7 @@ const NutritionPage = ({ GetUserNutritionLogs , setNutritionLogs, NutritionLogs 
       <h1 className='header'>Nutrition</h1>
     </div>
     <div className='body-nutri'>
-      <Link  to={"/nutrition/create"}><button className='add-nutri'>+</button> </Link>
+      <Link  to={"/nutrition/create"} className='link'><button className='add-nutri'>Add more...</button> </Link>
       <br />
       
       {NutritionLogs.map((NutritionLogs, id) => (<NutritionPageCard key={id} NutritionLogs={NutritionLogs}/>))}
