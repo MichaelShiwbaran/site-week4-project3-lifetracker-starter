@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import SleepPageFunctions from "./SleepPageFunctions"
 import { useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import "./SleepPage.css"
@@ -10,7 +9,6 @@ import SleepPageCard from '../SleepPageCard/SleepPageCard'
 const SleepPage = ({ SleepLogs, setSleepLogs, Login, GetSleepingData }) => {
   // const = sleepPageFunctions
   console.log(Login)
-  const { sleepPageFunctions }  =  SleepPageFunctions()
   
   if (Login){
     useEffect( () => { GetSleepingData( setSleepLogs) }, [])
