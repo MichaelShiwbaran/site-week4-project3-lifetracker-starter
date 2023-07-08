@@ -6,7 +6,7 @@ import SignUpUser from '../Api/SignUpUser/SignUpUser'
 import SignUpEventFunctions from './SignUpEventFunctions'
 const SignUp = (props) => {
   const [signUpInfo, setSignUpInfo]  = useState({'firstname': null , 'lastname': null , 'username': null, 'email': null, 'password':null })
-  const {PostSignUpInfo} = SignUpUser(signUpInfo)
+  const {PostSignUpInfo} = SignUpUser(signUpInfo, props.setLogin, props.setUserID)
   
   // const updateUserName = (event )=>{
   //   event.preventDefault()

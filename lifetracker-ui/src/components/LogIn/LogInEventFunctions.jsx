@@ -30,7 +30,7 @@ const LogInEventFunctions = ({setLoginInfo }) => {
             console.log('LogInFormSubmission was called')
             event.preventDefault();
             PostCallToLogInUser(LoginInfo ) 
-            history("/")
+            history("/activity")
             
           }
 

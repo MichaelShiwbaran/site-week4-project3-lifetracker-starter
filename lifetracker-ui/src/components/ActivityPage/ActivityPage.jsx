@@ -2,7 +2,7 @@ import React from 'react'
 import "./ActivityPage.css"
 import {Link} from 'react-router-dom'
 
-const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
+const ActivityPage = ({Login, ExerciseLogs, NutritionLogs, SleepLogs}) => {
 
   let totalExerciseMinutes = 0
   let averageDailyCalories = 0
@@ -50,7 +50,9 @@ const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
   console.log("Total Sleep", avgHoursSleep)
 
   return (
+
     <div className='activity-main'>
+      
       <div className='activity-split'>
         <div className='h3'>
           <h3>Activity Log</h3>
@@ -61,7 +63,7 @@ const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
           <Link to={"/sleep/create"}><button className='sleep-btn'>Log More Sleep</button></Link>
         </div>
       </div>
-      
+      { Login?
       <div className="total-data">
      
       <div className='ex-minutes data-card'>
@@ -81,15 +83,16 @@ const ActivityPage = ({ExerciseLogs, NutritionLogs, SleepLogs}) => {
         <p> Average Hours of Sleep:</p>
         <p className='data-num' >{avgHoursSleep}</p>
       </div>
-
-      </div>
-
-    
+      
+      </div>:
+      <h1>Please Login First</h1>
+}
 
 
     </div>
   )
 }
+
 
 export default ActivityPage
 

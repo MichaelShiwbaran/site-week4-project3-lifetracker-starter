@@ -75,7 +75,7 @@ const SignUpEventFunctions = ( {setSignUpInfo } ) => {
       const signUpFormSubmission = (event, PostSignUpInfo, signUpInfo ) => {
         event.preventDefault();
         PostSignUpInfo(signUpInfo) 
-        history('/login')
+        history('/activity')
         
         
       }

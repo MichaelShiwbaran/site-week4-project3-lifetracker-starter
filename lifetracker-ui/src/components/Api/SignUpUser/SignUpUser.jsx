@@ -4,7 +4,7 @@ import axios from 'axios'
 import jwtDecode from "jwt-decode";
 import Cookies from "js-cookie";
 
-const SignUpUser = (SignUpInfo) => {
+const SignUpUser = (SignUpInfo, setLogin, setUserID) => {
     
     const firstname = SignUpInfo.firstname
     const lastname = SignUpInfo.lastname
@@ -20,6 +20,9 @@ const SignUpUser = (SignUpInfo) => {
               const token = response.data.token
               Cookies.set("token", token)
             }
+            let userInfo = response.data.user
+            setUserID(userInfo.id)
+            setLogin(true)
         } catch (error) {
             console.error(error)
         }

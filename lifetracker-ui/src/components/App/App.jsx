@@ -71,12 +71,12 @@ function App() {
         <Navbar setSleepLogs = {setSleepLogs} setExcerciseLogs = { setExcerciseLogs } Login = {Login} handleSignOutUser = {handleSignOutUser} />
         <Routes>
           <Route path="/" element={<Home  Login = {Login} />} />
-          <Route path="/activity" element=  {<ActivityPage  ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs}/>} />
+          <Route path="/activity" element=  {<ActivityPage  Login = {Login} ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs}/>} />
           <Route path="/nutrition" element={<NutritionPage PostUserNutritionLogs = { PostUserNutritionLogs } NutritionLogs = {NutritionLogs} GetUserNutritionLogs = { GetUserNutritionLogs } setNutritionLogs = {setNutritionLogs} Login = {Login} />} />
           <Route path='/exercise' element ={<ExercisePage ExerciseLogs = {ExerciseLogs} setExcerciseLogs = {setExcerciseLogs} PostUserExcercises = { PostUserExcercises } GetUserExcercises = { GetUserExcercises } Login = {Login} UserID = { UserID } />} />
           <Route path='/sleep' element = {<SleepPage SleepLogs=  {SleepLogs} setSleepLogs = { setSleepLogs} PostSleepingData =  { PostSleepingData } GetSleepingData = { GetSleepingData }  Login = {Login}  UserID  = { UserID }/>} />
           <Route path = '/login' element= {<LogIn Login={Login} setLogin = { setLogin } UserID = { UserID } setUserID = { setUserID } />}  />
-          <Route path = '/signUp' element = {< SignUp   />} />
+          <Route path = '/signUp' element = {< SignUp   Login={Login} setLogin = { setLogin } UserID = { UserID } setUserID = { setUserID }/>} />
           <Route path = '/sleep/create' element = {< SleepPageCreate PostSleepingData = {PostSleepingData} />} />
           <Route path = '/nutrition/create' element = {< NutritionPageCreate PostUserNutritionLogs = { PostUserNutritionLogs }  />} />
           <Route path = '/exercise/create' element = {< ExercisePageCreate PostUserExcercises = {PostUserExcercises } />} /> 
