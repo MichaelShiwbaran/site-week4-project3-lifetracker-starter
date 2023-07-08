@@ -26,10 +26,10 @@ By the end of this project you will be able to...
 
 ## Application Features
 
-## Walkthrough VIDEO: 
-<a href="https://www.loom.com/share/2f36f780cc814a7585d7c38030851faf">
-    <p>LifeTracker - 7 July 2023 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2f36f780cc814a7585d7c38030851faf-with-play.gif">
+## Walkthrough VIDEO: {UPDATE TO HAVE THE CORRECTIONS NEEDED}
+<a href="https://www.loom.com/share/c018e8fe6cb9436dba9173124dfd6818">
+    <p>LifeTracker - 8 July 2023 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/c018e8fe6cb9436dba9173124dfd6818-with-play.gif">
   </a>
 
 ### Core Features
