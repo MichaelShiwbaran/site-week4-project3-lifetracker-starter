@@ -7,7 +7,7 @@ const ActivityPage = ({Login, ExerciseLogs, NutritionLogs, SleepLogs, setExcerci
 
   if(Login){
     useEffect( () => { GetUserExcercises( setExcerciseLogs) 
-                       GetUserNutritionLogs(setExcerciseLogs)
+                       GetUserNutritionLogs(setNutritionLogs)
                        GetSleepingData(setSleepLogs)}, [])
   }
 
