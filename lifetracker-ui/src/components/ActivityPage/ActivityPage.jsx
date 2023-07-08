@@ -1,8 +1,15 @@
 import React from 'react'
+import { useEffect } from 'react'
 import "./ActivityPage.css"
 import {Link} from 'react-router-dom'
 
-const ActivityPage = ({Login, ExerciseLogs, NutritionLogs, SleepLogs}) => {
+const ActivityPage = ({Login, ExerciseLogs, NutritionLogs, SleepLogs, setExcerciseLogs, GetUserExcercises, GetUserNutritionLogs, setNutritionLogs, setSleepLogs, GetSleepingData}) => {
+
+  if(Login){
+    useEffect( () => { GetUserExcercises( setExcerciseLogs) 
+                       GetUserNutritionLogs(setExcerciseLogs)
+                       GetSleepingData(setSleepLogs)}, [])
+  }
 
   let totalExerciseMinutes = 0
   let averageDailyCalories = 0

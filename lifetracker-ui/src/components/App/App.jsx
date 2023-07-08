@@ -71,7 +71,7 @@ function App() {
         <Navbar setSleepLogs = {setSleepLogs} setExcerciseLogs = { setExcerciseLogs } Login = {Login} handleSignOutUser = {handleSignOutUser} />
         <Routes>
           <Route path="/" element={<Home  Login = {Login} />} />
-          <Route path="/activity" element=  {<ActivityPage  Login = {Login} ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs}/>} />
+          <Route path="/activity" element=  {<ActivityPage  Login = {Login} ExerciseLogs = {ExerciseLogs} NutritionLogs = {NutritionLogs} SleepLogs=  {SleepLogs} setExcerciseLogs = {setExcerciseLogs} GetUserExcercises = { GetUserExcercises } GetUserNutritionLogs = { GetUserNutritionLogs } setNutritionLogs = {setNutritionLogs} setSleepLogs = { setSleepLogs} GetSleepingData = { GetSleepingData }/>} />
           <Route path="/nutrition" element={<NutritionPage PostUserNutritionLogs = { PostUserNutritionLogs } NutritionLogs = {NutritionLogs} GetUserNutritionLogs = { GetUserNutritionLogs } setNutritionLogs = {setNutritionLogs} Login = {Login} />} />
           <Route path='/exercise' element ={<ExercisePage ExerciseLogs = {ExerciseLogs} setExcerciseLogs = {setExcerciseLogs} PostUserExcercises = { PostUserExcercises } GetUserExcercises = { GetUserExcercises } Login = {Login} UserID = { UserID } />} />
           <Route path='/sleep' element = {<SleepPage SleepLogs=  {SleepLogs} setSleepLogs = { setSleepLogs} PostSleepingData =  { PostSleepingData } GetSleepingData = { GetSleepingData }  Login = {Login}  UserID  = { UserID }/>} />
