@@ -16,6 +16,7 @@ const NutritionPage = ({ GetUserNutritionLogs , setNutritionLogs, NutritionLogs 
     <div className='header-wrap-nutri'>
       <h1 className='header'>Nutrition</h1>
     </div>
+    { Login?
     <div className='body-nutri'>
       <Link  to={"/nutrition/create"} className='link'><button className='add-nutri'>Add more...</button> </Link>
       <br />
@@ -23,8 +24,9 @@ const NutritionPage = ({ GetUserNutritionLogs , setNutritionLogs, NutritionLogs 
       {NutritionLogs.map((NutritionLogs, id) => (<NutritionPageCard key={id} NutritionLogs={NutritionLogs}/>))}
 
     
-    </div>
-    
+    </div>:
+    <h1>Please Login First</h1>
+}
     </div>
   )
 }

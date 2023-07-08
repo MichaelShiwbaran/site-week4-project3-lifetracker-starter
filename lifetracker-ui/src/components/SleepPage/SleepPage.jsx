@@ -20,7 +20,7 @@ const SleepPage = ({ SleepLogs, setSleepLogs, Login, GetSleepingData }) => {
     <div className='header-wrap-sleep'>
       <h1 className='header'>Sleep</h1>
     </div>
-
+    {Login?
     <div className='body-sleep'>
     <Link  to={"/sleep/create"} className='link'><button className='add-sleep-btn'>Add more...</button> </Link>
     <br />
@@ -30,7 +30,9 @@ const SleepPage = ({ SleepLogs, setSleepLogs, Login, GetSleepingData }) => {
 
     {/* <SleepPageCard/> */}
 
-    </div>
+    </div>:
+    <h1>Please Login First</h1>
+}
     </div>
   )
 }

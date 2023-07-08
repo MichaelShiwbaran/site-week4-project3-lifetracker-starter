@@ -16,14 +16,16 @@ const ExercisePage = ( {ExerciseLogs, setExcerciseLogs, Login, GetUserExcercises
   <div className='header-wrap-ex'>
       <h1 className='header'>Exercise</h1>
   </div>
-
+    { Login? 
   <div className='body-ex'>
   <Link  to={"/exercise/create"} className='link'><button className='add-ex'>Add more...</button> </Link>
   <br />
 
   {ExerciseLogs.map((ExerciseLogs, id) => (<ExercisePageCard key={id} ExerciseLogs={ExerciseLogs}/>))}
 
-  </div>
+  </div>:
+  <h1>Please Login First</h1>
+}
   </div>
 
 
