@@ -31,7 +31,7 @@ const SleepPage = ({ SleepLogs, setSleepLogs, Login, GetSleepingData }) => {
     {/* <SleepPageCard/> */}
 
     </div>:
-    <h1>Please Login First</h1>
+    <h1 className='loginfirst'>Please Login First</h1>
 }
     </div>
   )

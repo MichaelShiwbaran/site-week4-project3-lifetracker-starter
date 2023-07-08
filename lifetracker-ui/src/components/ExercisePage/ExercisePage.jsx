@@ -24,7 +24,7 @@ const ExercisePage = ( {ExerciseLogs, setExcerciseLogs, Login, GetUserExcercises
   {ExerciseLogs.map((ExerciseLogs, id) => (<ExercisePageCard key={id} ExerciseLogs={ExerciseLogs}/>))}
 
   </div>:
-  <h1>Please Login First</h1>
+  <h1 className='loginfirst'>Please Login First</h1>
 }
   </div>
 
