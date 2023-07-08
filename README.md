@@ -1,4 +1,9 @@
-# Project #3: LifeTracker Application
+# Project #3: LifeTracker Application - Michael Shiwbaran
+
+# TOTAL NUM OF HOURS: {~25}
+
+# RENDER LINK TO DEPLOYED WEBPAGE:
+https://lifetracker-hub-website-ui.onrender.com
 
 ## Overview
 
@@ -21,6 +26,12 @@ By the end of this project you will be able to...
 
 ## Application Features
 
+## Walkthrough VIDEO: 
+<a href="https://www.loom.com/share/2f36f780cc814a7585d7c38030851faf">
+    <p>LifeTracker - 7 July 2023 - Watch Video</p>
+    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/2f36f780cc814a7585d7c38030851faf-with-play.gif">
+  </a>
+
 ### Core Features
 
 - [X] **The Landing Page:** Display a large hero image and a brief blurb on what this application is about. *Note:* This is the only page that unauthenticated users should be able to view.
@@ -37,6 +48,13 @@ By the end of this project you will be able to...
   - [X] A form to enter relevant information (i.e., if tracking nutrition, the user can enter calories, timestamp, image, category, etc.).
   - [X] Each activity tracked is given a unique ID for easy lookup.
 - [X] Deploy your website with Render. Check out our [Render Deployment Guide](https://courses.codepath.org/snippets/site/render_deployment_guide) for detailed instructions.
+
+
+## Questions:
+
+- Personally I felt that the topics discussed in the lab was very helpful in completeing this project. Many of the concepts and steps I needed to take to complete this project was already explained thoroughly in the labs. I definitely felt unprepared to handle the fetching of the data from the database to the frontend though because of the fact that we needed to use the userID's.
+
+- If I had more time, I would've definitely made the website more my own and fiddle around with the css styling. I would've also added animations and add different features such as filtering by categories and also being able to delete entries made for exercise, nutrition, and sleep.
 
 ### Stretch Features
 
